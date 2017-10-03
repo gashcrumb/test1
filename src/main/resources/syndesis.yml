@@ -1,0 +1,9 @@
+---
+flows:
+- steps:
+  - kind: endpoint
+    uri: twitter-search--KvYqLMKvNnN50qL0k6b:parsnip?delay=600000&filterOld=true
+  - kind: endpoint
+    uri: atlas:mapping-step-2.json
+  - kind: endpoint
+    uri: salesforce-upsert-sobject--KvYqWW0vNnN50qL0k6c?sObjectIdName=Id&sObjectName=Contact
